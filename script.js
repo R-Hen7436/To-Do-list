@@ -39,4 +39,10 @@ function showList(){
     listContainer.innerHTML = localStorage.getItem("Data");
 }
 
+document.getElementById("input-box").addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        addList(); 
+    }
+});
+
 showList();
